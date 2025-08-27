@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f1115 0%, #1a1d23 100%);
+            color: #eaeef2;
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .bg-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 200px 150px, rgba(78, 161, 255, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 1000px 100px, rgba(78, 161, 255, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 150px 500px, rgba(78, 161, 255, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 1100px 450px, rgba(78, 161, 255, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 300px 300px, rgba(78, 161, 255, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 900px 350px, rgba(78, 161, 255, 0.2) 0%, transparent 50%);
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .name {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            color: #eaeef2;
+        }
+        
+        .tagline {
+            font-size: 32px;
+            margin: 0 0 20px 0;
+            color: #b8c0c8;
+        }
+        
+        .skills {
+            font-size: 24px;
+            margin: 0 0 40px 0;
+            color: #8a929a;
+        }
+        
+        .accent-line {
+            width: 400px;
+            height: 4px;
+            background: #4ea1ff;
+            margin: 0 auto 40px auto;
+            opacity: 0.8;
+        }
+        
+        .location {
+            font-size: 20px;
+            color: #6b7280;
+        }
+        
+        .instructions {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        Take a screenshot of this page at 1200x630px for Open Graph image
+    </div>
+    
+    <div class="container">
+        <div class="bg-pattern"></div>
+        <div class="content">
+            <h1 class="name">Arnav Kamath</h1>
+            <p class="tagline">CS Undergrad & Problem Solver</p>
+            <p class="skills">Algorithms • Machine Learning • Parallel Computing</p>
+            <div class="accent-line"></div>
+            <p class="location">NUS Computing • Singapore</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1115;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1d23;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Background pattern -->
+  <circle cx="200" cy="150" r="2" fill="#4ea1ff" opacity="0.3"/>
+  <circle cx="1000" cy="100" r="1.5" fill="#4ea1ff" opacity="0.2"/>
+  <circle cx="150" cy="500" r="1" fill="#4ea1ff" opacity="0.4"/>
+  <circle cx="1100" cy="450" r="2.5" fill="#4ea1ff" opacity="0.25"/>
+  <circle cx="300" cy="300" r="1.8" fill="#4ea1ff" opacity="0.3"/>
+  <circle cx="900" cy="350" r="1.2" fill="#4ea1ff" opacity="0.2"/>
+  
+  <!-- Main content -->
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#eaeef2">Arnav Kamath</text>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#b8c0c8">CS Undergrad & Problem Solver</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#8a929a">Algorithms • Machine Learning • Parallel Computing</text>
+  
+  <!-- Accent line -->
+  <line x1="400" y1="450" x2="800" y2="450" stroke="#4ea1ff" stroke-width="4" opacity="0.8"/>
+  
+  <!-- Bottom text -->
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6b7280">NUS Computing • Singapore</text>
+</svg>
