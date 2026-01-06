@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Arnav Kamath</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body data-page="projects">
+    <!-- Persistence Layers -->
+    <canvas id="void-canvas" class="galaxy-bg"></canvas>
+
+    <!-- Background Objects -->
+    <div class="space-objects">
+        <div class="nebula-1"></div>
+        <div class="planet-1"></div>
+        <div class="star-cluster"></div>
+    </div>
+
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Top Navigation (Fixed) -->
+    <nav class="nav-top">
+        <a href="index.html" class="nav-logo">AK</a>
+        <div class="nav-links">
+            <a href="index.html#about">Identity</a>
+            <a href="index.html#experience">Context</a>
+            <a href="index.html#work">Work</a>
+            <a href="projects.html">Archive</a>
+        </div>
+        <button class="menu-trigger" id="menu-trigger">Menu</button>
+    </nav>
+
+    <!-- Smooth Scroll Wrapper -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <section class="section">
+                <div class="container">
+                    <div style="margin-bottom: 4rem; padding-top: 4rem;">
+                        <span class="mono-label">ARCHIVE // 01</span>
+                        <h1 style="font-size: clamp(3rem, 6vw, 6rem); margin-top: 1rem;">Detailed Case Studies.</h1>
+                    </div>
+
+                    <div id="projects-list-detailed">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer section">
+                <div class="container">
+                    <div class="footer-base">
+                        <span class="mono-small">DESIGNED IN THE VOID</span>
+                        <span class="mono-small">© 2026</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Command Palette (Hidden) -->
+    <div class="cmd-overlay" id="cmd-overlay">
+        <div class="cmd-modal">
+            <input type="text" class="cmd-input" placeholder="search_system..." id="cmd-input">
+            <div class="cmd-results" id="cmd-results"></div>
+            <div class="cmd-footer">
+                <span>ESC to close</span>
+                <span>↑↓ to navigate</span>
+                <span>ENTER to select</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
